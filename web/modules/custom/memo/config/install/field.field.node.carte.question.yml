@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.question
+    - node.type.carte
+  module:
+    - text
+  enforced:
+    module:
+      - memo
+id: node.carte.question
+field_name: question
+entity_type: node
+bundle: carte
+label: Question
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {}
+third_party_settings: {  }
+field_type: string
+
+

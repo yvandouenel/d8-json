@@ -1,0 +1,16 @@
+{
+  "_links": {
+    "type": {
+      "href":"http://local.d8-json.my/rest/type/node/article"
+    }
+  },
+  "title":[{
+    "value":"My new article created through REST"
+  }],
+  "body":[{
+    "value": "This is an article body that was created through the REST POST method"
+  }],
+  "type":[{
+    "target_id":"article"
+  }]
+}

@@ -1,0 +1,1186 @@
+{
+  "tableaux": [
+    {
+      "id": 5,
+      "visible": false,
+      "sujet": "01 - linux-1-base",
+      "colonnes": [
+        {
+          "id": 1,
+          "title": "En cours ",
+          "cartes": [
+            {
+              "id": 110,
+              "question": "Stopper la propagation d'un événement e",
+              "reponse": "e.stopPropagation();",
+              "show_reponse": false,
+              "show_form": false,
+              "reponse_html": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Je sais un peu",
+          "cartes": [
+            {
+              "id": 32,
+              "question": "Qui a créé le noyau Linux ?",
+              "reponse": "Linus Torvalds en 1991.",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Je sais bien",
+          "cartes": [
+            {
+              "id": 33,
+              "question": "Quelle est la licence d’utilisation qui régit le noyau Linux ?",
+              "reponse": "GNU GPL (Licence Gnu Public Licence) permettant un libre accès, modification et devoir de republier les modifications dans le cadre d’un usage non personnel.",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 34,
+              "question": "Quels sont les 3 types d’utilisateurs sous Linux ?",
+              "reponse": "Le propriétaire (user), le Groupe (group), les autres (others)",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 35,
+              "question": "Quels sont les 3 types de droits sur un fichier ?",
+              "reponse": "Lecture (r), Écriture (w), Exécution (x)",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 20,
+              "question": "Espace disque utilisé par le répertoire \"test\"",
+              "reponse": "du -sh test (s pour summary, h pour humain)",
+              "show_reponse": false
+            },
+            {
+              "id": 18,
+              "question": "Savoir quel est l'espace disque restant ?",
+              "reponse": "df -h (<b>d</b>isk <b>f</b>ree -<b>h</b>umainement compréhensible)",
+              "show_reponse": false,
+              "reponse_html": true
+            },
+            {
+              "id": 50,
+              "question": "Date de création de UNIX",
+              "reponse": "1969 - 1970",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 52,
+              "question": "Commande pour savoir où l'on se trouve dans l'arborescence ?",
+              "reponse": "pwd",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Je sais très bien",
+          "cartes": [
+            {
+              "id": 36,
+              "question": "Peut-on se faire passer pour un autre utilisateur ?",
+              "reponse": "Oui, grâce à la commande su",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 37,
+              "question": "Comment exécuter une commande en tant que root ?",
+              "reponse": "Grâce à la commande sudo suivie du nom de la commande à exécuter.",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 19,
+              "question": "Lister les fichiers et répertoire",
+              "reponse": "ls ou ls -lah pour voir les fichiers cachés et lire facilement les poids",
+              "show_reponse": false
+            },
+            {
+              "id": 21,
+              "question": "Changer de répertoire (vers test par exemple)",
+              "reponse": "cd test",
+              "show_reponse": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "visible": false,
+      "sujet": "02 - Linux-2-apt",
+      "colonnes": [
+        {
+          "id": 1,
+          "title": "En cours ",
+          "cartes": [
+            {
+              "id": 39,
+              "question": "Quelle est la commande pour chercher un paquet ?",
+              "reponse": "apt search mot_clef_lié_au_paquet",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 40,
+              "question": "Quelle est la commande pour installer un paquet ?",
+              "reponse": "sudo apt install nom_du_paquet",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 41,
+              "question": "Quelle est la commande pour supprimer un paquet ?",
+              "reponse": "sudo apt remove nom_du_paquet",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 42,
+              "question": "Comment met-on à jour les paquets installés ?",
+              "reponse": "sudo apt update puis sudo apt upgrade",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Je sais un peu",
+          "cartes": [
+            {
+              "id": 38,
+              "question": "comment s’appelle un serveur hébergeant des paquets ?",
+              "reponse": "Un dépôt.",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Je sais bien",
+          "cartes": []
+        },
+        {
+          "id": 4,
+          "title": "Je sais très bien",
+          "cartes": []
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "visible": false,
+      "sujet": "03 - git",
+      "colonnes": [
+        {
+          "id": 1,
+          "title": "En cours ",
+          "cartes": []
+        },
+        {
+          "id": 2,
+          "title": "Je sais un peu",
+          "cartes": []
+        },
+        {
+          "id": 3,
+          "title": "Je sais bien",
+          "cartes": []
+        },
+        {
+          "id": 4,
+          "title": "Je sais très bien",
+          "cartes": [
+            {
+              "id": 94,
+              "question": "Comment récupérer la dernière version du code d'un dépôt que l'on suit déjà (git clone déjà fait) ?",
+              "reponse": "git pull",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 95,
+              "question": "Comment cloner un dépôt distant qui ne nous appartient pas ?",
+              "reponse": "git clone https://github.com/yvandouenel/memo-exo.git",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 96,
+              "question": "Comment voir la différence du fichier test.html entre sa version actuelle et le dernier commit ?",
+              "reponse": "git diff test.html",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 97,
+              "question": "Comment faire revenir à l'état du dernier commit un fichier qui a été modifié (écrase les dernières modifications) ?",
+              "reponse": "git checkout correction/style.css",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 23,
+              "question": "Créer un dépot git",
+              "reponse": "git init",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 22,
+              "question": "Voir l'état des fichiers",
+              "reponse": "git status (ou git st)",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 24,
+              "question": "Sélectionner des fichiers avant des les \"commiter\"",
+              "reponse": "git add fichierOuRepertoire",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 25,
+              "question": "\"Commiter\" les fichiers",
+              "reponse": "git ci -m \"Fichiers mis à jour ou ajoutés pour telle ou telle raison",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 26,
+              "question": "Pousser les fichiers sur le serveur distant (github)",
+              "reponse": "git push",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 27,
+              "question": "Créer une branche \"develop\"",
+              "reponse": "git branch develop",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 28,
+              "question": "Faire un \"merge\" de develop sur master",
+              "reponse": "git checkout master\ngit diff master..develop\ngit merge develop\n",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 29,
+              "question": "Voir les différentes versions d'un commit",
+              "reponse": "git log",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "visible": false,
+      "sujet": "04 - HTML",
+      "colonnes": [
+        {
+          "id": 1,
+          "title": "En cours ",
+          "cartes": []
+        },
+        {
+          "id": 2,
+          "title": "Je sais un peu",
+          "cartes": []
+        },
+        {
+          "id": 3,
+          "title": "Je sais bien",
+          "cartes": [
+            {
+              "id": 53,
+              "question": "Quelle est la balise qui entoure tout le contenu qui se trouve entre le header et le footer du body ?",
+              "reponse": "<main>Contenu principal</main>",
+              "show_reponse": false,
+              "show_form": false,
+              "reponse_html": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Je sais très bien",
+          "cartes": [
+            {
+              "id": 13,
+              "question": "Qui édicte les standards du web ?",
+              "reponse": "le W3C",
+              "show_reponse": false
+            },
+            {
+              "id": 11,
+              "question": "Que signifie HTML ?",
+              "reponse": "Hypertext Markup Language",
+              "show_reponse": false
+            },
+            {
+              "id": 14,
+              "question": "Qu'est ce que le web ?",
+              "reponse": "Une application inventée principalemenet par Tim Berners-Lee, qui utilise l'internet et qui comprend : un client web, un serveur web, un protocole de transfert des données, le langage HTML",
+              "show_reponse": false
+            },
+            {
+              "id": 10,
+              "question": "Qui est l'inventeur du W3C ?",
+              "reponse": "Tim Berners-Lee",
+              "show_reponse": false
+            },
+            {
+              "id": 22,
+              "question": "Balise d'en-tête et de pied de page ?",
+              "reponse": "<header> et <footer>",
+              "show_reponse": false
+            },
+            {
+              "id": 31,
+              "question": "Quelle est la balise adaptée pour des actualités ?",
+              "reponse": "<article></article>",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 12,
+              "question": "Quelles sont les balises obligatoires en HTML 5 ?",
+              "reponse": "<!DOCTYPE html>\n<html>\n<head>\n\t<title>An HTML standard template</title>\n\t<meta charset=\"utf-8\"  />\n</head>\n<body>\n</body>\n</html>",
+              "show_reponse": false,
+              "reponse_html": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "visible": false,
+      "sujet": "05 - CSS",
+      "colonnes": [
+        {
+          "id": 1,
+          "title": "En cours ",
+          "cartes": [
+            {
+              "id": 59,
+              "question": "Quelle est la propriété CSS qui permet de rendre \"flexible\" la mise en page ?",
+              "reponse": "display: flex;",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 60,
+              "question": "Quelle est la propriété CSS qui permet de gérer l'alignement horizontal en utilisant \"flex\" ?",
+              "reponse": "justify-content",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 61,
+              "question": "Quelles sont les valeurs possibles pour gérer l'alignement horizontal avec flex ?",
+              "reponse": "flex-start, flex-end, center, space-between, space-around.",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Je sais un peu",
+          "cartes": [
+            {
+              "id": 56,
+              "question": "Comment créer en CSS un nouvel élément qui sera le dernier fils d'une section d'id \"section1\" et qui a pour propriété \"clear:left;\"",
+              "reponse": "section#section1:after {clear: left;}",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 58,
+              "question": "Quelle est la propriété CSS qui permet de positionner un élément par rapport au body ?",
+              "reponse": "position: absolute;",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 59,
+              "question": "Dans quel cas, un élément qui a pour position \"absolute\" n'a pas pour repère le body ?",
+              "reponse": "Dans le cas où l'un de ses éléments parents a pour position \"relative\"",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 55,
+              "question": "Quelle propriété va permettre à un élément de passer sous un autre élément flottant à gauche ?",
+              "reponse": "clear: left;",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Je sais bien",
+          "cartes": []
+        },
+        {
+          "id": 4,
+          "title": "Je sais très bien",
+          "cartes": [
+            {
+              "id": 43,
+              "question": "Que signifie \"CSS\"",
+              "reponse": "Cascading Style Sheets - Feuilles de style en cascade",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 44,
+              "question": "Comment s'appelle la partie du code CSS qui permet de sélectionner le code html sur lequel le style va s'appliquer ?",
+              "reponse": "Sélecteur",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 45,
+              "question": "Selecteur pour sélectionner les articles qui sont des descendants d'une section",
+              "reponse": "section article",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 46,
+              "question": "Sélecteur pour sélectionner les articles qui sont les fils directs d'une section",
+              "reponse": "section > article",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 47,
+              "question": "Sélectionner à la fois les h2 et les h3",
+              "reponse": "h2, h3",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 48,
+              "question": "Sélectionner un élément qui appartient à la classe actu",
+              "reponse": ".actu",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 49,
+              "question": "Sélectionner un élément qui a pour identité actu1",
+              "reponse": "#actu1",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 54,
+              "question": "Quelle propriété permet de faire \"flotter\" à gauche un élément ?",
+              "reponse": "float: left;",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "visible": true,
+      "sujet": "05 - suite : Flex",
+      "colonnes": [
+        {
+          "id": 1,
+          "title": "En cours ",
+          "cartes": [
+            {
+              "id": 64,
+              "question": "Quelles sont les valeurs possibles pour la propriété concernant l'axe principal ?",
+              "reponse": "row, row-reverse, column, column-reverse",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 67,
+              "question": "Quelles sont les 3 propriétés de base pour définir le comportement des éléments (enfants) flexibles ?",
+              "reponse": "flex-grow, flex-shrink, flex-basis",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 68,
+              "question": "Quelle est la propriété css qui regroupe les 3propriétés de base qui définissent le comportement des éléments (enfants) flexibles ?",
+              "reponse": "flex: flex-grow flex-shrink flex-basis\nEx : flex : 1 1 auto;\n/* les éléments vont grandir et rétrécir et utiliseront la méthode par défaut pour définir la taille de base */",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 69,
+              "question": "Quelle propriété permet de définir l'alignement sur l'axe transversal (cross axe) ?",
+              "reponse": "align-items (stretch, flex-start, flex-end, center, baseline)",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 70,
+              "question": "Quelle propriété permet de définir la façon dont se réparti l'espace disponible entre les éléments sur l'axe principal ?",
+              "reponse": "justify-content (flex-start, flex-end, center, space-around, space-between,",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Je sais un peu",
+          "cartes": [
+            {
+              "id": 63,
+              "question": "Quelle propriété permet de définir l'axe principal ?",
+              "reponse": "flex-direction",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 65,
+              "question": "Quelle propriété css permet de définir à la fois flex-direction et flex-wrap",
+              "reponse": "flex-flow",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 62,
+              "question": "Quelle propriété  CSS permet de définir si des éléments flexibles peuvent passer à la ligne .",
+              "reponse": "flex-wrap",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Je sais bien",
+          "cartes": [
+            {
+              "id": 66,
+              "question": "Quelle propriété doit on donner à un élément pour le définir en tant que \"container flexible\" ?",
+              "reponse": "display: flex;",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Je sais très bien",
+          "cartes": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "visible": false,
+      "sujet": "06 Drupal Drush",
+      "colonnes": [
+        {
+          "id": 1,
+          "title": "En cours ",
+          "cartes": [
+            {
+              "id": 16,
+              "question": "Voir les fichiers themes concernés dans le code source",
+              "reponse": "drush state-set theme.debug 1\n(drupal 7 drush vset theme_debug 1)",
+              "show_reponse": false
+            },
+            {
+              "id": 17,
+              "question": "Supprimer tous les caches",
+              "reponse": "drush cr",
+              "show_reponse": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Je sais un peu",
+          "cartes": []
+        },
+        {
+          "id": 3,
+          "title": "Je sais bien",
+          "cartes": []
+        },
+        {
+          "id": 4,
+          "title": "Je sais très bien",
+          "cartes": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "visible": false,
+      "sujet": "07 - javascript",
+      "colonnes": [
+        {
+          "id": 1,
+          "title": "En cours d'apprentissage",
+          "cartes": [
+            {
+              "id": 78,
+              "question": "Qu'est ce qui déclenche la création d'un contexte d'éxécution ?",
+              "reponse": "L'appel d'une fonction (anonyme ou pas, immédiate ou pas) et/ou d'un bloc de code\n",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 94,
+              "question": "Comment instancier un objet XMLHttpRequest",
+              "reponse": "const req = new XMLHttpRequest();",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Je sais un peu",
+          "cartes": [
+            {
+              "id": 98,
+              "question": "Comment créer un nouvel objet XMLHttpRequest ?",
+              "reponse": "const req = new XMLHttpRequest();",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 99,
+              "question": "\"Ouvrir\" la requête (permet de  définir la méthode et l’url de notre requête)",
+              "reponse": "req.open(\"GET\",\"http://www.test.com/xxx\",true);\n// Get correspond à la méthode, le second argument correspond à l'url des données à récupérer, le troisième argument correspond à la synchronisation (true veut dire asynchrone)",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 100,
+              "question": "Executer la requête XMLHttpRequest (dans le cas de GET) ?",
+              "reponse": "req.send(null);",
+              "show_reponse": true,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Je sais bien",
+          "cartes": [
+            {
+              "id": 3,
+              "show_reponse": false,
+              "question": "Quelle est la syntaxe pour créer un \"boucle for\" qui parcourt un index \"i\" de 0 à 3 avec un pas de 1?",
+              "reponse": "for(let i = 0; i < 4; i  ) {}",
+              "show_form": false
+            },
+            {
+              "id": 87,
+              "question": "Comment stocker dans la variable \"taille\", la taille du tableau \"t\" ?",
+              "reponse": "let taille = t.length;",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 2,
+              "show_reponse": false,
+              "question": "Comment créer un constructeur \"Personne\" qui attend deux propriétés \"nom\" et \"prénom\" et qui définit la méthode \"sePresenter\" ?",
+              "reponse": "function Personne(nom,prenom){<br>\n  this.prenom = prenom;<br>\n  this.nom = nom;<br>\n  this.sePresenter = function() {<br>\n    console.log(\"Je m'appelle \"   this.prenom   \" \"   this.nom);<br>\n  }<br>\n}",
+              "show_form": false,
+              "reponse_html": true
+            },
+            {
+              "id": 80,
+              "question": "Comment créer un constructeur \"Personne\" qui attend deux propriétés \"nom\" et \"prénom\" ?",
+              "reponse": "function Personne(\"nom\",\"prenom\"){<br> this.prenom = prenom;<br>this.nom = nom;<br>}",
+              "show_reponse": false,
+              "show_form": false,
+              "reponse_html": true
+            },
+            {
+              "id": 81,
+              "question": "Comment créer une \"class\" Personne qui attend les arguments \"nom\" et \"prenom\" et qui définit la méthode \"sePrésenter\" ?",
+              "reponse": "class Personne {<br>\n  constructor(nom, prenom) {<br>\n    this.nom = nom;<br>\n    this.prenom = prenom;<br>\n  }<br>\n  sePresenter() {<br>\n    console.log(\"Bonjour ...\"   this.prenom   \" \"   this.nom);<br>\n  }<br>\n}",
+              "show_reponse": false,
+              "show_form": false,
+              "reponse_html": true
+            },
+            {
+              "id": 82,
+              "question": "Quel est le mot clé utiliser pour étendre une class ?",
+              "reponse": "extends",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 83,
+              "question": "Dans une class qui en \"étend\" une autre, quelle est la fonction pour reprendre les propriétés du constructeur parent ?",
+              "reponse": "super(nom,prenom,...);",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 84,
+              "question": "Dans le constructeur d'un objet, comment déclarer et affecter la propriété \"nom\" ?",
+              "reponse": "this.nom = nom;",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 85,
+              "question": "Comment stocker dans la variable \"t\", le tableau qui comporte 2 \"string\" : \"Banane\" et \"Cerise\"",
+              "reponse": "let t = [\"Banane\",\"Cerise\"];",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 88,
+              "question": "Comment créer une condition qui affiche dans la console \"Hello\" si la variable \"i\" est égal à 3 ?",
+              "reponse": "if(i == 3) {console.log(\"Hello\")};",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 89,
+              "question": "Comment créer un élément \"div\" du DOM en js  et le stocker dans la variable div1 ?",
+              "reponse": "let div1 = document.createElement(\"div\");",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 90,
+              "question": "Comment créer un élément texte du DOM et le placer comme fils de l'élément div1 ?",
+              "reponse": "let text1 = document.createTextNode(\"Ceci est un texte\");\ndiv1.appendChild(text1);",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 91,
+              "question": "Comment ajouter l'élément div1 au body ?",
+              "reponse": "window.document.body.appendChild(div1);",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 92,
+              "question": "Comment récupérer l'élément qui a pour identité \"h1\" et le stocker dans la variable \"h1\" ?",
+              "reponse": "let h1 = window.document.getElementById(\"h1\");",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 1,
+              "show_reponse": false,
+              "question": "Quels sont les types primitifs de données en js ?",
+              "reponse": "string(texte), boolean (booléen), number(nombre), undefined (la variable existe mais elle n'a pas été affectée), null (quand on veut remettre une variable à null)",
+              "show_form": false
+            },
+            {
+              "id": 76,
+              "question": "Comment déclarer une variable \"i\" et lui affecter la valeur numérique 2 ?",
+              "reponse": "var i = 2; A partir d'ECMAScript 5, on préfère utiliser : let i = 2;",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 77,
+              "question": "Quelle est la portée (scope) d'une variable créée avec le mot clé var ?",
+              "reponse": "Portée locale si la variable est déclarée dans une fonction. Ex: function(){var i = 2;}\nPortée globale si la variable est déclarée en dehors d'une fonction.",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 79,
+              "question": "Comment déclarer classiquement la fonction \"addition\" qui attend deux paramètres et qui renvoie la somme des deux paramètres ?",
+              "reponse": "function addition(i,j){return i   j;}",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Je sais très bien",
+          "cartes": [
+            {
+              "id": 4,
+              "show_reponse": false,
+              "question": "Une question",
+              "reponse": "Sa réponse"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "visible": false,
+      "sujet": "08 jQuery",
+      "colonnes": [
+        {
+          "id": 1,
+          "title": "En cours ",
+          "cartes": [
+            {
+              "id": 101,
+              "question": "Comment isoler le code tout en attendant que le dom soit chargé et en s'assurant que l'alias $ fonctionne ?",
+              "reponse": "jQuery(function($){ // code ici });",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 102,
+              "question": "Comment récupérer un élément du DOM (h1) ?",
+              "reponse": "let h1 = jQuery(\"h1\");",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 103,
+              "question": "Comment créer un paragraphe d'identité \"p1\" et l'ajouter comme dernier fils de \"body\" ?",
+              "reponse": "$(\"<p></p>\",{text:\"Texte\", id:\"p1\"}).appendTo(\"body\");",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Je sais un peu",
+          "cartes": []
+        },
+        {
+          "id": 3,
+          "title": "Je sais bien",
+          "cartes": []
+        },
+        {
+          "id": 4,
+          "title": "Je sais très bien",
+          "cartes": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "sujet": "09 - react",
+      "visible": false,
+      "colonnes": [
+        {
+          "id": 5,
+          "title": "En cours d'apprentissage",
+          "cartes": [
+            {
+              "id": 5,
+              "show_reponse": false,
+              "question": "Comment s'appelle l'objet d'un component qui permet de mettre à jour le rendu ?",
+              "reponse": "state"
+            },
+            {
+              "id": 15,
+              "question": "Quelle est la méthode qui permet de changer le rendu d'un component ?",
+              "reponse": "this.setState();",
+              "show_reponse": false
+            },
+            {
+              "id": 30,
+              "question": "Comment lancer l'application localement ?",
+              "reponse": "npm start",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 14,
+              "question": "Comment \"empaqueter\" une application react pour l'utiliser en production ?",
+              "reponse": "npm run build\n",
+              "show_reponse": false
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Je sais un peu",
+          "show_reponse": false,
+          "cartes": [
+            {
+              "id": 110,
+              "question": "Comment faire appel à la méthode \"addCarte\" qui a été passée par le paramètre \"onAddCarte\" via le component parent tout en lui passant en paramètres l'objet colonne ?",
+              "reponse": "<button onClick={(e) => {this.props.onAddCarte(e,this.props.colonne)}}>Ajout d'une carte</button>",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 111,
+              "question": "Comment créer des cartes dans la méthode \"render\" en utilisant le tableau \"cartes\" qui se trouve dans l'objet \"state\" de la class \"Colonne\" ?",
+              "reponse": "{this.state.cartes.map(carte => {return <Carte question={carte.question} />})}",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Je sais bien",
+          "cartes": [
+            {
+              "id": 109,
+              "question": "Comment faire appel à la méthode \"addCarte\" au clic sur un bouton ?",
+              "reponse": "<button onClick={this.addCarte}>Ajouter une carte</button>",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 108,
+              "question": "Comment un \"component\" enfant récupère les paramètres passés par le \"component\" parent ?",
+              "reponse": "via l'objet \"props\". Ex : this.props.question",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 107,
+              "question": "Syntaxe pour créer une \"Carte\" qui passera le paramètre \"question\"dans la méthode \"render\" d'un component ?",
+              "reponse": "<Carte question=\"Qui est l'inventeur du W3C ?\" />",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 106,
+              "question": "Raccourci pour créer une class qui pourra s'importer dans un autre fichier ?",
+              "reponse": "cc // pour create class",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 105,
+              "question": "Raccourci pour importer l'objet Component de React ?",
+              "reponse": "imrc",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Je sais très bien",
+          "cartes": []
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "visible": false,
+      "sujet": "10 - node",
+      "colonnes": [
+        {
+          "id": 1,
+          "title": "En cours ",
+          "cartes": []
+        },
+        {
+          "id": 2,
+          "title": "Je sais un peu",
+          "cartes": []
+        },
+        {
+          "id": 3,
+          "title": "Je sais bien",
+          "cartes": []
+        },
+        {
+          "id": 4,
+          "title": "Je sais très bien",
+          "cartes": []
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "visible": false,
+      "sujet": "11 - Emmet",
+      "colonnes": [
+        {
+          "id": 1,
+          "title": "En cours ",
+          "cartes": [
+            {
+              "id": 51,
+              "question": "Créer un formulaire",
+              "reponse": "form:get>label{Nom}input:text",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 72,
+              "question": "Quel raccourci permet de créer tous les éléments de base d'une page html ?",
+              "reponse": "!",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 73,
+              "question": "Créer en une seule ligne de commande une liste avec 6 puces numérotées et comportant un numéro incrémenté ?",
+              "reponse": "ul>li*6{texte $}",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 74,
+              "question": "Raccourci pour voir ce que va donner le code Emmet ?",
+              "reponse": "ctrl   espace",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 93,
+              "question": "Faire revenir Emmet ",
+              "reponse": "CTRL   ESPACE",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Je sais un peu",
+          "cartes": [
+            {
+              "id": 104,
+              "question": "Paragraphes avec class alternative \"question\" \"reponse\"",
+              "reponse": "(p.question{question $} p.reponse{reponse $})*6",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Je sais bien",
+          "cartes": []
+        },
+        {
+          "id": 4,
+          "title": "Je sais très bien",
+          "cartes": []
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "visible": false,
+      "sujet": "English",
+      "colonnes": [
+        {
+          "id": 1,
+          "title": "En cours ",
+          "cartes": []
+        },
+        {
+          "id": 2,
+          "title": "Je sais un peu",
+          "cartes": [
+            {
+              "id": 111,
+              "question": "Do you have any vegetarian (plat)?",
+              "reponse": "dishes",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 112,
+              "question": "Do you have any (suggestion, conseil)?",
+              "reponse": "recommendations",
+              "show_reponse": false,
+              "show_form": false
+            },
+            {
+              "id": 113,
+              "question": "Do you take (carte bleue)?",
+              "reponse": "Credit card",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Je sais bien",
+          "cartes": []
+        },
+        {
+          "id": 4,
+          "title": "Je sais très bien",
+          "cartes": []
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "visible": false,
+      "sujet": "Visual Studio Code",
+      "colonnes": [
+        {
+          "id": 1,
+          "title": "En cours ",
+          "cartes": [
+            {
+              "id": 75,
+              "question": "Raccourci pour aller d'un onglet à l'autre  ?",
+              "reponse": "Ctrl   TAB",
+              "show_reponse": false,
+              "show_form": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Je sais un peu",
+          "cartes": []
+        },
+        {
+          "id": 3,
+          "title": "Je sais bien",
+          "cartes": []
+        },
+        {
+          "id": 4,
+          "title": "Je sais très bien",
+          "cartes": []
+        }
+      ]
+    }
+  ]
+}

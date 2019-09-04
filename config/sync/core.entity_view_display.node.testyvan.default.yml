@@ -1,0 +1,37 @@
+uuid: aba3deb5-7c5e-4f50-b68d-4be40b472990
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.testyvan.field_question
+    - field.field.node.testyvan.field_reponse
+    - node.type.testyvan
+  module:
+    - user
+id: node.testyvan.default
+targetEntityType: node
+bundle: testyvan
+mode: default
+content:
+  field_question:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_reponse:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

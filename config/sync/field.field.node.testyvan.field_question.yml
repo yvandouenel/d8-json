@@ -1,0 +1,19 @@
+uuid: 134cb921-e0a2-4cf0-8d38-a47419d607eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_question
+    - node.type.testyvan
+id: node.testyvan.field_question
+field_name: field_question
+entity_type: node
+bundle: testyvan
+label: Question
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

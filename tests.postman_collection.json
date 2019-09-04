@@ -1,0 +1,98 @@
+{
+	"id": "745f0f6f-4a8e-2675-490d-d6151f4b933a",
+	"name": "tests",
+	"description": "",
+	"order": [
+		"fa9ffbad-184a-d7cd-4c7c-2feec37050b4",
+		"5a7ae682-42bf-a1f6-2569-b5ce1b1b5dc6"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1566746362375,
+	"owner": "8473519",
+	"public": false,
+	"requests": [
+		{
+			"id": "5a7ae682-42bf-a1f6-2569-b5ce1b1b5dc6",
+			"headers": "",
+			"headerData": [],
+			"url": "http://local.d8-json.my/node/1?_format=hal_json",
+			"queryParams": [
+				{
+					"key": "_format",
+					"value": "hal_json",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "745f0f6f-4a8e-2675-490d-d6151f4b933a",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://local.d8-json.my/node/1?_format=hal_json",
+			"description": "Récupérer le node 1",
+			"descriptionFormat": "html",
+			"time": 1566746938805,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "fa9ffbad-184a-d7cd-4c7c-2feec37050b4",
+			"headers": "X-CSRF-TOKEN: uDt0HlEJpRTpw5BlY-Yiyd6ts_cLsV1ev88bCAauFXA\nContent-Type: application/hal+json\nAuthorization: Basic eXZhbjo1MkJpYmE5NTs=\n",
+			"headerData": [
+				{
+					"key": "X-CSRF-TOKEN",
+					"value": "uDt0HlEJpRTpw5BlY-Yiyd6ts_cLsV1ev88bCAauFXA",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/hal+json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Basic eXZhbjo1MkJpYmE5NTs=",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://local.d8-json.my/entity/node?_format=hal_json",
+			"queryParams": [
+				{
+					"key": "_format",
+					"value": "hal_json",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "745f0f6f-4a8e-2675-490d-d6151f4b933a",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://local.d8-json.my/entity/node?_format=hal_json",
+			"description": "Ajout d'un article",
+			"descriptionFormat": "html",
+			"time": 1566746392275,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n  \"_links\": {\n    \"type\": {\n      \"href\":\"http://local.d8-json.my/rest/type/node/article\"\n    }\n  },\n  \"title\":[{\n    \"value\":\"My new article created through REST\"\n  }],\n  \"body\":[{\n    \"value\": \"This is an article body that was created through the REST POST method\"\n  }],\n  \"type\":[{\n    \"target_id\":\"article\"\n  }]\n}"
+		}
+	]
+}

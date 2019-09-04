@@ -1,0 +1,19 @@
+uuid: bed49add-6325-499a-842c-b0203f5a7c81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_reponse
+    - node.type.testyvan
+id: node.testyvan.field_reponse
+field_name: field_reponse
+entity_type: node
+bundle: testyvan
+label: Réponse
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

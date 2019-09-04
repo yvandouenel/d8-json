@@ -1,0 +1,37 @@
+uuid: 1d24ca95-ede5-4ffc-9368-c5822b029909
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.testyvan.field_question
+    - field.field.node.testyvan.field_reponse
+    - node.type.testyvan
+id: node.testyvan.default
+targetEntityType: node
+bundle: testyvan
+mode: default
+content:
+  field_question:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reponse:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  title: true
+  uid: true
