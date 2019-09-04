@@ -68,5 +68,12 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  reponse:
+    type: string_textfield
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
 hidden: {  }
 third_party_settings: {  }

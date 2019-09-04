@@ -28,6 +28,12 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+  reponse:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
   links:
     weight: 100
 hidden: {  }
