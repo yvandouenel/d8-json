@@ -1,3 +1,4 @@
+uuid: dd06e649-3a3c-4c55-a5ba-19f01e255040
 langcode: en
 status: true
 dependencies:
@@ -6,9 +7,6 @@ dependencies:
     - node.type.carte
   module:
     - text
-  enforced:
-    module:
-      - memo
 id: node.carte.body
 field_name: body
 entity_type: node
@@ -21,5 +19,4 @@ default_value: {  }
 default_value_callback: ''
 settings:
   display_summary: true
-third_party_settings: {  }
 field_type: text_with_summary

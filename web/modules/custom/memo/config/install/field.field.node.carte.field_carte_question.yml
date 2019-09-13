@@ -1,26 +1,21 @@
+uuid: 4d3bcf6a-a07c-4035-8c2a-d13c82acffc2
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.question
+    - field.storage.node.field_carte_question
     - node.type.carte
   module:
     - text
-  enforced:
-    module:
-      - memo
-id: node.carte.question
-field_name: question
+id: node.carte.field_carte_question
+field_name: field_carte_question
 entity_type: node
 bundle: carte
 label: Question
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {}
-third_party_settings: {  }
-field_type: string
-
-
+settings: {  }
+field_type: text

@@ -1,16 +1,17 @@
+uuid: 9141c40d-ba40-4d41-b3a3-8a50f133e08e
 langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.carte.body
-    - field.field.node.carte.question
+    - field.field.node.carte.field_carte_colonne
+    - field.field.node.carte.field_carte_question
+    - field.field.node.carte.field_carte_reponse
+    - field.field.node.carte.field_carte_thematique
     - node.type.carte
   module:
     - text
     - user
-  enforced:
-    module:
-      - memo
 id: node.carte.default
 targetEntityType: node
 bundle: carte
@@ -22,18 +23,41 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
-  question:
-    label: hidden
-    type: text_default
-    weight: 101
+    region: content
+  field_carte_colonne:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_carte_question:
+    weight: 102
+    label: above
     settings: {  }
     third_party_settings: {  }
-  reponse:
-    label: hidden
     type: text_default
-    weight: 101
+    region: content
+  field_carte_reponse:
+    weight: 103
+    label: above
     settings: {  }
     third_party_settings: {  }
+    type: text_default
+    region: content
+  field_carte_thematique:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   links:
     weight: 100
-hidden: {  }
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

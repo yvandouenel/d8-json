@@ -1,6 +1,7 @@
 <?php
 // Programmatically create taxonomy terms for taxonomy module on install.
 // This is the bar.install file included in a module.
+use Drupal\field\Entity\FieldStorageConfig;
 use Drupal\taxonomy\Entity\Term;
 use Symfony\Component\Yaml\Yaml;
 use Drupal\taxonomy\Entity\Vocabulary;
@@ -13,14 +14,11 @@ use Drupal\taxonomy\Entity\Vocabulary;
  *
  */
 function memo_install() {
-  $vocabularies = \Drupal\taxonomy\Entity\Vocabulary::loadMultiple();
-  if (!isset($vocabularies['colonnes'])) {
-    $vocabulary = \Drupal\taxonomy\Entity\Vocabulary::create(array(
-      'vid' => 'colonnes',
-      'name' => t('Colonnes'),
-    ));
-    $vocabulary->save();
+  // Set the weight of the memo.module to 1 so it is loaded after the taxonomy.module.
+  module_set_weight('memo', 1);
 
+  $vocabularies = \Drupal\taxonomy\Entity\Vocabulary::loadMultiple();
+  if (isset($vocabularies['carte_colonne'])) {
     // Création des termes
     $items = [
       'À apprendre',
@@ -30,7 +28,23 @@ function memo_install() {
     ];
     foreach ($items as $item) {
       $new_term = \Drupal\taxonomy\Entity\Term::create([
-        'vid' => 'colonnes',
+        'vid' => 'carte_colonne',
+        'name' => $item,
+      ]);
+      $new_term->enforceIsNew();
+      $new_term->save();
+    }
+  }
+  if (isset($vocabularies['carte_thematique'])) {
+    // Création des termes
+    $items = [
+      'Développement',
+      'Langues',
+      'Départements',
+    ];
+    foreach ($items as $item) {
+      $new_term = \Drupal\taxonomy\Entity\Term::create([
+        'vid' => 'carte_thematique',
         'name' => $item,
       ]);
       $new_term->enforceIsNew();
@@ -43,13 +57,14 @@ function memo_install() {
  */
 function memo_uninstall() {
   $tids = \Drupal::entityQuery('taxonomy_term')
-    ->condition('vid', 'colonnes')
-    ->execute();
+  ->condition('vid', 'carte_colonne')
+  ->execute();
 
   $controller = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
   $entities = $controller->loadMultiple($tids);
   $controller->delete($entities);
-  vocabulary_delete("colonnes");
+  vocabulary_delete("carte_colonne");
+  vocabulary_delete("carte_thematique");
 }
 
 function vocabulary_delete($vid) {
