@@ -31,9 +31,22 @@ class ListCartes extends ResourceBase {
     $query->condition('type', 'carte');
     $query->condition('uid', $uid);
 
-    // taxonomie
-    $colonne = [29];
-    $query->condition('field_carte_colonne', $colonne, 'IN');
+    // taxonomie des colonnes carte_colonne
+    $colonnes = [];
+    $vid = 'carte_colonne';
+    $terms =\Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree($vid);
+    // pour chaque colonne, on fait une requête
+    $i = 0;
+    foreach ($terms as $term) {
+      $term_data[] = array(
+        'id' => $term->tid,
+        'name' => $term->name
+      );
+      $colonnes[$i] = $term->tid;
+      //array_push($colonnes[$i],$term->tid);
+      $i ++;
+    }
+    $query->condition('field_carte_colonne', $colonnes[0], 'IN');
 
 
     $nids = $query->execute();
@@ -41,7 +54,6 @@ class ListCartes extends ResourceBase {
 
     $cartes = [];
     foreach($nodes as $cle =>$node){
-      //ksm($node->get('field_carte_question')->getValue());
       // Le getValue()['0'] peut déclencher un warning si le champ est vide.
       // Cf https://www.drupal.org/forum/support/module-development-and-code-questions/2016-04-25/entity-getfield-getvalue-returns#comment-12892695
       $question = array("question" => $node->get('field_carte_question')->getValue()['0']['value'],
@@ -52,8 +64,6 @@ class ListCartes extends ResourceBase {
 
     // création de la réponse
     $response = ['tableaux' => $cartes];
-    /* $response = new stdClass();
-    $response->property = 'Here we go'; */
 
     return new ResourceResponse($response);
   }
