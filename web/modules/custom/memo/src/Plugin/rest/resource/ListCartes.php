@@ -21,16 +21,9 @@ class ListCartes extends ResourceBase {
   public function get() {
     /* $nids = \Drupal::entityQuery('node')->condition('type','carte')->execute();
     $nodes =  \Drupal\node\Entity\Node::loadMultiple($nids); */
-
+    $response = [];
     // Récupération de l'id de l'utilisateur connecté
-    //$user_id = User::load(\Drupal::currentUser()->id());
     $uid = \Drupal::currentUser()->id();
-
-    // Requête
-    $query = \Drupal::entityQuery('node');
-    $query->condition('type', 'carte');
-    $query->condition('uid', $uid);
-
     // taxonomie des colonnes carte_colonne
     $colonnes = [];
     $vid = 'carte_colonne';
@@ -38,33 +31,42 @@ class ListCartes extends ResourceBase {
     // pour chaque colonne, on fait une requête
     $i = 0;
     foreach ($terms as $term) {
-      $term_data[] = array(
+      $colonnes[$i] = array(
         'id' => $term->tid,
         'name' => $term->name
       );
-      $colonnes[$i] = $term->tid;
-      //array_push($colonnes[$i],$term->tid);
       $i ++;
     }
-    $query->condition('field_carte_colonne', $colonnes[0], 'IN');
-
-
-    $nids = $query->execute();
-    $nodes =  \Drupal\node\Entity\Node::loadMultiple($nids);
-
-    $cartes = [];
-    foreach($nodes as $cle =>$node){
-      // Le getValue()['0'] peut déclencher un warning si le champ est vide.
-      // Cf https://www.drupal.org/forum/support/module-development-and-code-questions/2016-04-25/entity-getfield-getvalue-returns#comment-12892695
-      $question = array("question" => $node->get('field_carte_question')->getValue()['0']['value'],
-      "reponse" => $node->get('field_carte_reponse')->getValue()['0']['value']);
-      array_push($cartes,$question,$reponse);
-      //ksm($node);
+    foreach ($colonnes as $colonne) {
+          // Requête
+          $col_id = array($colonne['id']);
+          $query = \Drupal::entityQuery('node');
+          $query->condition('type', 'carte');
+          $query->condition('uid', $uid);
+          $query->condition('field_carte_colonne', $col_id, 'IN');
+          $nids = $query->execute();
+          $nodes =  \Drupal\node\Entity\Node::loadMultiple($nids);
+          $cols = array("title" => $colonne['name']);
+          $cartes = array();
+          foreach($nodes as $cle => $node) {
+            // Le getValue()['0'] peut déclencher un warning si le champ est vide.
+            // Cf https://www.drupal.org/forum/support/module-development-and-code-questions/2016-04-25/entity-getfield-getvalue-returns#comment-12892695
+            $question_reponse = array(
+              "question" => $node->get('field_carte_question')->getValue()['0']['value'],
+              "reponse" => $node->get('field_carte_reponse')->getValue()['0']['value']
+            );
+            if (!empty($question_reponse)) {
+              array_push($cartes,$question_reponse);
+              //dpm("Hello");
+            }
+            if (!array_key_exists("cartes", $cols)) {
+              $cols["cartes"] = $cartes;
+            }
+          }
+          //dpm($cols);
+      array_push($response, $cols);
     }
-
-    // création de la réponse
-    $response = ['tableaux' => $cartes];
-
+      //dpm($response);
     return new ResourceResponse($response);
   }
 }
