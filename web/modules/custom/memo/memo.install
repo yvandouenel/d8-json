@@ -38,7 +38,7 @@ function memo_install() {
   if (isset($vocabularies['carte_thematique'])) {
     // Création des termes
     $items = [
-      'Développement',
+      'Programmation',
       'Langues',
       'Départements',
     ];
