@@ -7,9 +7,7 @@
     // On teste directement le status de notre instance de XMLHttpRequest
     if (this.status === 200) {
       // Tout baigne, voici le contenu de la réponse
-      /* this.responseText = JSON.stringify(JSON.parse(this.responseText),null,2);
-      console.log(this.responseText); */
-      console.log(JSON.stringify({ x: 5, y: 6 }));
+         console.log(this.responseText);
     } else {
       // On y est pas encore, voici le statut actuel
       console.log("Statut actuel", this.status, this.statusText);

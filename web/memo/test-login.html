@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test Login</title>
+</head>
+<body>
+<h1>Test Login</h1>
+
+<form id="login" method="post" action="" accept-charset="UTF-8">
+    <div class="input-field">
+        <input id="edit-name" name="name" type="text" class="validate">
+        <label for="edit-name">Username or email address</label>
+    </div>
+    <div class="input-field">
+        <input id="edit-pass" name="pass" type="password" class="validate">
+        <label for="edit-pass">Password</label>
+    </div>
+    <p><a href="{{ url('user.pass') }}">Forgot your password?</a></p>
+    <button type="submit" class="btn btn-default btn-submit">Sign in</button>
+</form>
+  <script src="test-login.js" type="application/javascript"></script>
+
+</body>
+</html>
